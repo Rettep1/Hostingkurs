@@ -8,8 +8,22 @@
 <body>
     <h1>Hostingkurs</h1>
     <p>Denne nettsiden er nå hostet!</p>
-    <p>Clone repository:</p>
-    <p>git clone https://github.com/AleksanderEkman/Hostingkurs</p>
+    <p>Github Desktop:</p>
+    <p>
+        <a href="https://krt.im/g" target="_blank">krt.im/g</a>
+    </p>
+    <p>Klone repository:</p>
+    <p>
+        <button onclick="copyToClipboard('git clone https://github.com/AleksanderEkman/Hostingkurs')">
+            Kopier
+        </button>
+        <code id="cloneCommand">git clone https://github.com/AleksanderEkman/Hostingkurs</code>
+    </p>
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text);
+        }
+    </script>
 </body>
 </html>
 <style>
