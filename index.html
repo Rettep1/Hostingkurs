@@ -14,16 +14,11 @@
     </p>
     <p>Klone repository:</p>
     <p>
-        <button onclick="copyToClipboard('git clone https://github.com/AleksanderEkman/Hostingkurs')">
+        <button onclick="navigator.clipboard.writeText('git clone https://github.com/AleksanderEkman/Hostingkurs')">
             Kopier
-        </button>
+        </button> 
         <code id="cloneCommand">git clone https://github.com/AleksanderEkman/Hostingkurs</code>
     </p>
-    <script>
-        function copyToClipboard(text) {
-            navigator.clipboard.writeText(text);
-        }
-    </script>
 </body>
 </html>
 <style>
