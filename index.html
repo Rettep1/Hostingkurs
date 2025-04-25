@@ -7,29 +7,90 @@
 </head>
 <body>
     <h1>Hostingkurs</h1>
-    <p>Denne nettsiden er nå hostet!</p>
-    <p>Github Desktop:</p>
-    <p>
-        <a href="https://krt.im/g" target="_blank">krt.im/g</a>
-    </p>
-    <p>Klone repository:</p>
-    <p>
-        <button onclick="navigator.clipboard.writeText('git clone https://github.com/AleksanderEkman/Hostingkurs')">
-            Kopier
-        </button> 
-        <code id="cloneCommand">git clone https://github.com/AleksanderEkman/Hostingkurs</code>
-    </p>
+    
+    <div class="card">
+        <p>Denne nettsiden er nå hostet!</p>
+        <img src="party.png" alt="Et hyggelig smil" style="width: 200px; height: 200px;">
+        <img src="smiley.png" alt="Et hyggelig smil" style="width: 200px; height: 200px;">
+    </div>
+    
+    <div class="card">
+        <p>Github Desktop:</p>
+        <p>
+            <a href="https://krt.im/g" target="_blank">krt.im/g</a>
+        </p>
+    </div>
+    
+    <div class="card">
+        <p>Klone repository:</p>
+        <p>
+            <button onclick="navigator.clipboard.writeText('git clone https://github.com/AleksanderEkman/Hostingkurs')">
+                Kopier
+            </button> 
+            <code id="cloneCommand">git clone https://github.com/AleksanderEkman/Hostingkurs</code>
+        </p>
+    </div>
 </body>
 </html>
+
 <style>
     body {
-        /**/
-        background-color: #ffffff;
-        color: #000000;
-        /**/
+        /* Hovedfarger */
+        background-color: #f5f5f5;
+        color: #333333;
+        
+        /* Layout */
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        line-height: 1.6;
+    }
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    h1 {
+        /* Header stil */
+        color: #2c3e50;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .card {
+        /* Card container */
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    button {
+        /* Knapp stil */
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #2980b9;
+    }
+
+    code {
+        /* Kodesnutt stil */
+        background-color: #f8f8f8;
+        padding: 5px;
+        border-radius: 4px;
+        font-family: monospace;
+    }
+
+    a {
+        color: #3498db;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 </style>
